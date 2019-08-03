@@ -48,5 +48,7 @@ type Mutation {
   editCourse(_id: ID!, input: CourseEditInput): Course
   createStudent(input: StudentInput!): Student
   editStudent(_id: ID!, input: StudentEditInput): Student
+  deleteCourse(_id: ID!): Boolean
+  deleteStudent(_id: ID!): Boolean
 }
 
