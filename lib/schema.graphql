@@ -15,7 +15,7 @@ type Student {
 
 type Query {
   getCourses: [Course]
-  getCourse(id: ID!): Student
+  getCourse(id: ID!): Course
   getStudents: [Student]
   getStudent(id: ID!): Student
 }
