@@ -4,6 +4,8 @@ enum Level {
   avanzado
 }
 
+union GlobalSearch = Course | Student | Monitor
+
 type Course {
   _id: ID!
   title: String!
@@ -39,6 +41,7 @@ type Query {
   getCourse(id: ID!): Course
   getPeople: [Person]
   getPerson(id: ID!): Person
+  searchItems(keyword: String!) : [GlobalSearch]
 }
 
 input CourseInput {
